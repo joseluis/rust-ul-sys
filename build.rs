@@ -24,6 +24,7 @@ fn main() {
         .allowlist_var("^UL.*|JS.*|ul.*|WK.*")
         .allowlist_type("^UL.*|JS.*|ul.*|WK.*")
         .allowlist_function("^UL.*|JS.*|ul.*|WK.*")
+        .derive_default(true)
         .generate()
         .expect("Unable to generate bindings");
 
